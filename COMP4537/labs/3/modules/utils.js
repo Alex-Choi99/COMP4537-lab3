@@ -1,5 +1,5 @@
-import { LangEn } from "../lang/en/en.js";
-import fs from 'fs';
+let LangEn = require("../lang/en/en.js");
+let fs = require('fs');
 
 const UTF8 = 'utf8';
 const NEW_LINE = '\n';
@@ -7,7 +7,7 @@ const NEW_LINE = '\n';
 /**
  * Utility class providing helper methods for greeting and file content display.
  */
-export class Utils {
+class Utils {
 	constructor() {
 		this.lang = new LangEn();
 	}
@@ -117,3 +117,5 @@ export class Utils {
         res.end(html);
     }
 }
+
+module.exports = Utils;

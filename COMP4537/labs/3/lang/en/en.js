@@ -1,7 +1,7 @@
 /**
  * Language class for English messages and HTML content.
  */
-export class LangEn {
+class LangEn {
   constructor() {
     this.MESSAGE = {
       FILE_WRITE_ERROR: 'Error writing to file:',
@@ -50,3 +50,5 @@ export class LangEn {
     this.CLOSE_PRE = `</pre>`;
   }
 }
+
+module.exports = LangEn;

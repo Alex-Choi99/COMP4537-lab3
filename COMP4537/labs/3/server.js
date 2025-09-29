@@ -3,10 +3,10 @@
  * I acknowledge that I used VSCode Copilot to assist in the development of this code.
  */
 
-import { createServer } from 'http';
-import { parse } from 'url';
-import { Utils } from './modules/utils.js';
-import { LangEn } from './lang/en/en.js';
+let { createServer } = require('http');
+let { parse } = require('url');
+let Utils = require('./modules/utils.js');
+let LangEn = require('./lang/en/en.js');
 
 const PORT = 3000;
 const SUCCESS_STATUS = 200;
